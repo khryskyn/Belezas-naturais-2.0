@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo e Imagens dos Locais</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center; 
+        }
+        iframe {
+            display: block;
+            margin: 0 auto; 
+        }
+        .image-gallery {
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+        }
+        img {
+            max-width: 30%; 
+            height: auto; 
+            border-radius: 10px; 
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Vídeo e Imagens dos Locais</h1>
+    <nav>
+        <a href="lugares.html">Informações sobre os Locais</a>  
+        <a href="pag_inicial.html">Página Inicial</a>
+        <a href="mapa_vid.html">Mapa e Vídeo</a> 
+    </nav>
+</header>
+
+<section>
+    <h2>Assista ao nosso vídeo!</h2>
+    <iframe 
+        src="https://www.youtube.com/embed/oxOw2aGEV6s" 
+        height="500"
+        width="1000" 
+        allowfullscreen>
+    </iframe>
+
+    <h2>Imagens dos Locais</h2>
+    <div class="image-gallery">
+        <img src="/Imagens/GrandCanyonMap-azraft.jpg" alt="Grand Canyon">
+        <img src="/Imagens/brycemapa(1).jpg" alt="Bryce Canyon">
+        <img src="/Imagens/yosemitemapa.jpg" alt="Yosemite National Park">
+    </div>
+</section>
+
+<section>
+    <h2>Deixe seu Feedback</h2>
+    <form id="feedbackForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="formMessage"></div>
+</section>
+
+<script src="script.js"></script> <!-- Link para o arquivo JS -->
+
+</body>
+</html>
